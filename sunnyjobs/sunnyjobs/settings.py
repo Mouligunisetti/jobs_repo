@@ -77,12 +77,11 @@ WSGI_APPLICATION = 'sunnyjobs.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sunnyjobs',
-        'USER': 'root',
-        'PASSWORD':'root'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
 
 
 # Password validation
